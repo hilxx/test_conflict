@@ -6,6 +6,12 @@
 .cursor-hack {
   cursor: pointer !important;
 }
+
+// hide hack
+.visibility-hideeeeeeeeeeeeeeeeeeee {
+  opacity: 0 !important;
+}
+
 // hide hack
 .visibility-hide {
   opacity: 0 !important;
@@ -1369,7 +1375,6 @@ $sides: (top, bottom, left, right);
   }
 }
 
-
 // unselect
 @mixin unselectable2 {
   -webkit-touch-callout: none;
@@ -1378,7 +1383,6 @@ $sides: (top, bottom, left, right);
   -ms-user-select: none;
   user-select: none;
 }
-
 
 // unselect
 @mixin unselectable {
