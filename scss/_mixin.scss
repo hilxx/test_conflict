@@ -18,9 +18,8 @@
   font-weight: 700;
 }
 
-@mixin txt-h11111333333333333333 {
+@mixin txt-h1111111111111111111111111111111 {
   font-size: 3.6rem;
-
   font-weight: 700;
 }
 
@@ -1369,7 +1368,6 @@ $sides: (top, bottom, left, right);
   }
 }
 
-
 // unselect
 @mixin unselectable2 {
   -webkit-touch-callout: none;
@@ -1378,7 +1376,6 @@ $sides: (top, bottom, left, right);
   -ms-user-select: none;
   user-select: none;
 }
-
 
 // unselect
 @mixin unselectable {
