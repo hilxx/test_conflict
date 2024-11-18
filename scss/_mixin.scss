@@ -6,6 +6,12 @@
 .cursor-hack {
   cursor: pointer !important;
 }
+
+// hide hack
+.visibility-hideeeeeeeeeeeeeeeeeeeeㄹㅇㄴㄹㄴ {
+  opacity: 0 !important;
+}
+
 // hide hack
 .visibility-hide {
   opacity: 0 !important;
@@ -15,6 +21,11 @@
 @mixin txt-h1 {
   font-size: 3.6rem;
 
+  font-weight: 700;
+}
+
+@mixin txt-h1111111111111111111111111111111 {
+  font-size: 3.6rem;
   font-weight: 700;
 }
 
@@ -775,7 +786,12 @@
 
 @mixin input {
   @include txt-c4;
-  @include flex($flex: flex, $align: center, $justify: flex-start, $direction: row);
+  @include flex(
+    $flex: flex,
+    $align: center,
+    $justify: flex-start,
+    $direction: row
+  );
   width: 100%;
   background: $white;
   height: 4.8rem;
@@ -819,7 +835,12 @@
 }
 
 @mixin input-fractions {
-  @include flex($flex: flex, $align: center, $justify: flex-start, $direction: row);
+  @include flex(
+    $flex: flex,
+    $align: center,
+    $justify: flex-start,
+    $direction: row
+  );
 
   @include gap(0.8rem);
 
@@ -876,7 +897,12 @@
 
   .p-dropdown-label {
     @include txt-c4;
-    @include flex($flex: flex, $align: center, $justify: flex-start, $direction: row);
+    @include flex(
+      $flex: flex,
+      $align: center,
+      $justify: flex-start,
+      $direction: row
+    );
     align-items: center;
     color: $gray3;
   }
@@ -895,14 +921,24 @@
   padding: 0;
 
   .p-dropdown-label {
-    @include flex($flex: flex, $align: center, $justify: flex-start, $direction: row);
+    @include flex(
+      $flex: flex,
+      $align: center,
+      $justify: flex-start,
+      $direction: row
+    );
     min-width: 9.2rem;
     @include gap(0.4rem);
   }
 
   .selected {
     @include txt-b8;
-    @include flex($flex: flex, $align: center, $justify: flex-start, $direction: row);
+    @include flex(
+      $flex: flex,
+      $align: center,
+      $justify: flex-start,
+      $direction: row
+    );
     border-radius: 50%;
     width: fit-content;
 
@@ -954,13 +990,23 @@
   }
 
   .p-dropdown-label {
-    @include flex($flex: flex, $align: center, $justify: flex-start, $direction: row);
+    @include flex(
+      $flex: flex,
+      $align: center,
+      $justify: flex-start,
+      $direction: row
+    );
     @include gap(1.2rem);
     // min-width: 13.8rem;
   }
 
   .selected {
-    @include flex($flex: flex, $align: center, $justify: flex-start, $direction: row);
+    @include flex(
+      $flex: flex,
+      $align: center,
+      $justify: flex-start,
+      $direction: row
+    );
     @include gap(0.8rem);
     width: fit-content;
 
@@ -1005,7 +1051,12 @@
 
 @mixin file-list {
   .file-list {
-    @include flex($flex: flex, $align: center, $justify: flex-start, $direction: row);
+    @include flex(
+      $flex: flex,
+      $align: center,
+      $justify: flex-start,
+      $direction: row
+    );
     @include gap(null, 0.4rem, 1.2rem);
     border: none;
     outline: none;
@@ -1019,7 +1070,12 @@
 
     .file-item {
       color: $black;
-      @include flex($flex: flex, $align: center, $justify: flex-start, $direction: row);
+      @include flex(
+        $flex: flex,
+        $align: center,
+        $justify: flex-start,
+        $direction: row
+      );
       height: 3.6rem;
       padding: 0.8rem 1.6rem;
       justify-content: center;
@@ -1063,7 +1119,12 @@
 
 @mixin file-list-view {
   .file-list-view {
-    @include flex($flex: flex, $align: center, $justify: flex-start, $direction: column);
+    @include flex(
+      $flex: flex,
+      $align: center,
+      $justify: flex-start,
+      $direction: column
+    );
     @include gap(1.2rem);
     border: none;
     outline: none;
@@ -1077,13 +1138,23 @@
 
     .file-item-view {
       @include gap(1.2rem);
-      @include flex($flex: flex, $align: center, $justify: flex-start, $direction: row);
+      @include flex(
+        $flex: flex,
+        $align: center,
+        $justify: flex-start,
+        $direction: row
+      );
       flex-wrap: nowrap;
 
       .file-text {
         @include ellipsis($line-cnt: 1);
         color: $black;
-        @include flex($flex: flex, $align: center, $justify: flex-start, $direction: row);
+        @include flex(
+          $flex: flex,
+          $align: center,
+          $justify: flex-start,
+          $direction: row
+        );
         height: 3.6rem;
         padding: 0.8rem 1.6rem;
         justify-content: center;
@@ -1112,7 +1183,12 @@
       }
 
       .btn-view {
-        @include flex($flex: flex, $align: center, $justify: flex-start, $direction: row);
+        @include flex(
+          $flex: flex,
+          $align: center,
+          $justify: flex-start,
+          $direction: row
+        );
         flex: 0 0 auto;
       }
     }
@@ -1158,7 +1234,12 @@
 }
 
 // Display
-@mixin flex($flex: flex, $align: center, $justify: flex-start, $direction: row) {
+@mixin flex(
+  $flex: flex,
+  $align: center,
+  $justify: flex-start,
+  $direction: row
+) {
   display: $flex;
   flex-wrap: wrap;
   align-items: $align;
@@ -1258,7 +1339,27 @@ $mo-width-max: 1380px;
 }
 
 // margin, padding helper
-$spacemounts: (0, 5, 8, 10, 12, 15, 16, 20, 24, 30, 32, 35, 40, 45, 50, 56, 72, 80, 100);
+$spacemounts: (
+  0,
+  5,
+  8,
+  10,
+  12,
+  15,
+  16,
+  20,
+  24,
+  30,
+  32,
+  35,
+  40,
+  45,
+  50,
+  56,
+  72,
+  80,
+  100
+);
 $sides: (top, bottom, left, right);
 
 @each $space in $spacemounts {
@@ -1271,6 +1372,15 @@ $sides: (top, bottom, left, right);
       padding-#{$side}: #{$space}px !important;
     }
   }
+}
+
+// unselect
+@mixin unselectable2 {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 // unselect
